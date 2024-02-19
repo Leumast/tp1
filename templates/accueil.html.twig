@@ -1,0 +1,51 @@
+{%extends 'base.html.twig' %} 
+{% block stylesheets %} 
+
+{% endblock %} 
+{% block body %} 
+<div class="container">
+    
+ <div class="row sectionPrincipale"> 
+ <section class="col-3 sectionGauche"> 
+    <h4>Recherche</h4>
+    <form action="{{ path('accueil') }}" method="GET" class="form-inline">
+        <input class="form-control" type="text" placeholder="Recherche textuelle" name="recherche">
+        <button type="submit" class="btn btn-secondary w-75">Rechercher</button>
+    </form>
+    <h1 style="text-decoration: underline; color:black;">Catégories</h1>
+
+    {% for categorie in tabCategories %} 
+    <form method='POST'>
+
+        <div class="col my-5">
+            <button type="button" class="btn btn-secondary w-100">{{categorie.nom}}</button>
+        </div>
+    </form>
+    {% endfor %} 
+
+ </section> 
+ <section class="col-9 sectionDroite"> 
+    <h1 style="text-decoration: underline;">Produits</h1>
+    <div class="container">
+        <div class="row my-5">
+        {% for produit in tabProduits %}
+        <div class="col-4 mb-4">
+            <div class="card product-card">
+                <h5 class="card-title">{{ produit.nom }}</h5>
+                <img src="{{ asset('images/produit' ~ produit.Id ~ '_1.jpg') }}" class="card-img" alt="Image Produit">
+                <div class="card-body row">
+                 
+           
+                            <a href=""  class="col-5"><img src="{{ asset('images/cart.jpg') }}" class="imageCart"  alt="Image Cart" title="Ajouter au panier"></a>
+                        <div class="col-7" style="font-size: small;">Catégorie : {{produit.categorie.nom}}</div>
+
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+ </section> 
+ </div> 
+</div>
+ {% endblock %} 

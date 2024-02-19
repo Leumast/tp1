@@ -1,0 +1,130 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css);
+
+body {
+    background: #06090f;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #321d1d, #141E30);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+
+}
+
+
+
+.enteteCQP {
+    color: rgb(174, 174, 174);
+    text-align: right;
+}
+
+.piedCQP {
+    text-align: center;
+    color: rgb(9, 255, 0);
+    background-color: black;
+}
+
+.sectionGauche {
+    text-align: center;
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #947f7f57, #b49b9bb8);
+    border-bottom-left-radius: 3em;
+
+}
+
+
+
+.sectionDroite {
+    text-align: center;
+    color: rgb(15, 14, 5);
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #000000, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #947f7f57, #b49b9bb8);
+    border-bottom-right-radius: 3em;
+    border-top-right-radius: 3em;
+}
+
+.product-card {
+    height: 350px;
+    width: auto;
+    overflow: hidden;
+    border-radius: 5em;
+    padding: 0.6em;
+}
+
+.card-title {
+    font-size: medium;
+    text-align: center;
+    color: brown;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+
+
+.card-img {
+    height: 60%;
+    width: auto;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+.imageCart {
+    height: auto;
+    width: 100%;
+    border: black solid 2px;
+    border-radius: 10px;
+}
+
+.btn:hover.btn:hover:click {
+    color: rgba(255, 0, 0, 0.77);
+}
+
+.btn-dark-moon {
+    background: #141E30;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ffffffaa;
+    border: 3px solid #000000;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-item {
+    margin-right: 10px;
+    /* Adjust margin as needed */
+}
+
+.nav-link {
+    color: white;
+    /* Adjust link color as needed */
+    text-decoration: none;
+    padding: 10px;
+    /* Adjust padding as needed */
+}
+
+
+.li:hover {
+    color: red;
+}
